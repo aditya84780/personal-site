@@ -1,73 +1,99 @@
 <!DOCTYPE html>
-<!--I have not yet added tables -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Aditya Kumar Singh</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <title>Aditya Kumar Singh</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Berkshire+Swash&family=Graduate&family=Lobster&family=Montserrat:wght@100&family=Sacramento&family=Scope+One&display=swap" rel="stylesheet">    <body>
-<div class="top-container" id="home">
-  <ul>
-    <li><a class="navbar" href="#home">Home</a></li>
-    <li><a class="navbar" href="#intro">Intro</a></li>
-    <li><a class="navbar" href="#skills">Skills</a></li>
-    <li><a class="navbar" href="#contact">Contact</a></li>
-  </ul>
-  <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-  <h1>I'm Aditya</h1>
-<h2 class="id">an IIT Kgp undergrad.</h2>
-  <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-<img class="mountain" src="images/mountain.png" alt="mountain-img">
-</div>
-<div class="middle-container" id="intro">
-  <div class="profile">
-    <img class="dp" src="images/circle-cropped (6).png" alt="profile-picture">
-    <h2>Look who's here!</h2>
-    <p>I am an IITKGP undergrad and aspiring web developer.<br>I am an alumnus of DPS Bokaro and that's pretty much it for the intro.</p>
-  </div>
-  <hr>
-  <div class="skills" id="skills">
-    <h2>My Skills.</h2>
-    <div class="skill-row">
-      <img class="football" src="images/football-players.png" alt="football">
-      <h3>Football</h3>
-      <p>I don't play pro football but I surely enjoy playing it.</p>
-    </div>
-    <div class="skill-row">
-      <img class="sketching" src="images/drawing.png" alt="sketching">
-      <h3>Sketchng and Drawing</h3>
-      <p>I enjoy putting things I see onto paper since I was a kid and my people say I have had a "talent" for it.</p>
-    </div>
-    <div class="skill-row">
-      <img class="learner" src="images/read.png" alt="learner">
-      <h3>Learner</h3>
-      <p>I dicovered during my Jee preparation that I could in fact go from 0 to 1 in 2 years so I can and love to learn new things.</p>
-    </div>
-    <div class="skill-row">
-      <img class="coding" src="images/monitor.png" alt="coding">
-      <h3>Coding</h3>
-      <p>I have always been fascinated by coding and what it can do in the real world and I have started to try my hands on it.Loving it.</p>
-    </div>
-  </div>
-  <hr>
-<div class="contact-me" id="contact">
-    <h2>Get In Touch</h2>
-    <h3 id="conclude">If you want to have some discussion or just fun.</h3>
-    <p>want to play football or learn to code together? I can also draw you probably.</p>
-    <a class="BUTTON_KGT" href="mailto:adityasingh84780@gmail.com">CONTACT ME</a>
-  </div>
-</div>
+    <!-- Landing Page -->
+    <section id="home" class="landing">
+      <div class="landing-content">
+          <div class="text-content">
+              <h1>Welcome to My Portfolio</h1>
+              <p>Explore my projects and get in touch!</p>
+          </div>
+          <div class="image-content">
+              <img src="images/me.jpeg" alt="Hey! There was a picture of me here!" class="profile-picture">
+          </div>
+      </div>
+    </section>
 
 
-<div class="bottom-container">
-  <a class="footer-link" href="https://www.linkedin.com/in/aditya-kumar-singh-53906b205/">LinkedIn</a>
-  <a class="footer-link" href="#">top</a>
-  <a class="footer-link" href="https://www.instagram.com/sssinghhhh_/">Instagram</a>
-  <p style="color:#EAF6F6; margin-top:30px; font-size:80%;">© 2021 Aditya Kumar Singh.</p>
-</div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+          <h2>My Projects</h2>
+          <div class="project-collage">
+              <div class="project-item">
+                  <a href="https://github.com/aditya84780/Student_management_system" target="_blank">
+                      <img src="/images/fms.png" alt="Project 1">
+                      <div class="overlay">
+                          <h3>Student Management System</h3>
+                          <p>Organise and run your own e-school<br>(or even an offline one)<br>with your own database and APIs</p>
+                          <a href="https://github.com/aditya84780/Student_management_system" target="_blank" class="btn">View Work</a>
+                      </div>
+                  </a>
+              </div>
+              <div class="project-item">
+                  <a href="https://github.com/aditya84780/Discord_bot" target="_blank">
+                      <img src="/images/discord.png" alt="Project 2">
+                      <div class="overlay">
+                          <h3>Blob_Bot</h3>
+                          <p>Say Hi to your new coded friend!<br>Add him to Discord server and have fun!</p>
+                          <a href="https://github.com/aditya84780/Discord_bot" target="_blank" class="btn">View Work</a>
+                      </div>
+                  </a>
+              </div>
+              <div class="project-item">
+                  <a href="https://github.com/aditya84780/erp-iitkgp-negative-feedback" target="_blank">
+                      <img src="/images/console.png" alt="Project 3">
+                      <div class="overlay">
+                          <h3>ERP Feedback Automater</h3>
+                          <p>To autofill annoying mandatory feedback forms before exams. Saves tons of time during crunch</p>
+                          <a href="https://github.com/aditya84780/erp-iitkgp-negative-feedback" target="_blank" class="btn">View Work</a>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+    </section>
 
-    </body>
-  </head>
+
+
+    <!-- Contact Section -->
+    <footer id="contact" class="contact">
+      <div class="container">
+          <h2>Contact Me</h2>
+          <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+              <div class="form-row">
+                  <input type="text" id="name" name="name" placeholder="Name" required>
+                  <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+              <input type="submit" value="Send">
+          </form>
+      </div>
+    </footer>
+
+</body>
 </html>
